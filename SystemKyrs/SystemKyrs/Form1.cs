@@ -19,7 +19,9 @@ namespace SystemKyrs
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            ReversePolishNotation Rev = new ReversePolishNotation();
+            Rev.Expression = textBox1.Text;
+            textBox2.Text = Rev.Result().ToString();
         }
     }
 }
