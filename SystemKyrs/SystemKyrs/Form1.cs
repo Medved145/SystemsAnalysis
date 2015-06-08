@@ -14,7 +14,7 @@ namespace SystemKyrs
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();//153
         }
 
         private void button1_Click(object sender, EventArgs e)
