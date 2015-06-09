@@ -13,7 +13,7 @@ namespace SystemKyrs
         // здесь задаются регулярные выражения для разбора строки;
         private Regex rxPattern = new Regex(@"\!|\(|\)|\&|\+|\!|([0-1])|([a-zA-z][a-zA-z0-9_]*)"); // регэксп для всех операторов и операндов;
         private Regex rxIdentifiers = new Regex(@"[a-zA-z][a-zA-z0-9_]*"); // регэксп для операндов: A, B, X, X1, X100 etc;
-        private Regex rxNumbers = new Regex(@"[0-1]"); // регэксп для 0 и 1;
+        private Regex rxNumbers = new Regex(@"[0-9]"); // регэксп для 0 и 1;
         private Regex rxBrackets = new Regex(@"\(|\)"); // регэксп для круглых скобок;
         private Regex rxOperations = new Regex(@"\!|\&|\+|"); // регэксп для операций: !, &, +; 
         private List<string> identifiers = new List<string>();  // лист из уникальных идентификаторов;

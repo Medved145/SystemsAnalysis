@@ -23,5 +23,10 @@ namespace SystemKyrs
             Rev.Expression = textBox1.Text;
             textBox2.Text = Rev.Result().ToString();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
